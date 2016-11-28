@@ -23,7 +23,7 @@ This script requires installation of the dplyr and reshape2 packages.
 ### Merging
 This section of the script takes the test data and training data, which are separate, and merges them into one complete data set, along with the activity and subject id numbers (also in separate tables). The raw Inertial Signals data are not included in the complete data set, since they would necessarily be removed in the next step, as they contain no means or standard deviations.
 
-### Extracting Means and Standard Deviations of Measurements
+### Extracting means and standard deviations of measurements
 This section pulls only the columns containing the means and standard deviations of each measurement from the complete data set to create a new data set. The angle() variables are not included here (some take means as input, but they are not themselves means), nor are the meanFreq() variables included (a weighted average of the frequency components differs enough from the simple mean of each variable to exclude it from this analysis).
 
 ### Changing activities variable
